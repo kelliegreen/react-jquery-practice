@@ -19,7 +19,7 @@ const PersonList = React.createClass({
         {this.props.people.map(person => {
           return (
             <div key={person.name} style={styles.card} onClick={this.props.onCardClick.bind(null, person.name)} >
-              {person.name}
+              {person.name} | {person.height}
             </div>
           )
         })}
